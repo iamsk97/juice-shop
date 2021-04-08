@@ -19,6 +19,7 @@ steps:
     npm install -g @angular/cli
     npm install
     ng build --prod
+    npm audit fix
   displayName: 'npm install and build'
 - task: SnykSecurityScan@0
   inputs:
